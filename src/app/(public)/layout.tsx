@@ -1,13 +1,17 @@
-import { Navbar } from "@/app/components";
+import { Navbar } from "@/components";
 
-export default function PublicLayout({ children }: { children: React.ReactNode }) {
+export default function PublicLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
-    <Navbar />
-    <main className="flex flex-col items-center p-24">
-    <span className="text-lg">Hola mundo</span>
-    {children}
-  </main>
+      <Navbar />
+      <main className="flex flex-col items-center p-24">
+        <span className="text-lg">Hola mundo</span>
+        {children}
+      </main>
     </>
-  )
+  );
 }
