@@ -1,7 +1,12 @@
 import { PokemonsGrid } from "@/pokemons/components";
 import { PokemonResponse, SimplePokemon } from "@/pokemons/interfaces";
 
-const getPokemons = async (
+export const metadata = {
+  title: "151 Pokemons",
+  description: "Lista de 151 Pokemons",
+};
+
+export const getPokemons = async (
   limit: number = 20,
   offset: number = 0
 ): Promise<SimplePokemon[]> => {
